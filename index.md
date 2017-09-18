@@ -1,34 +1,54 @@
-# 딥러닝을 이용한 예술 튜토리얼
+딥러닝을 이용한 예술 튜토리얼
+=============================
 
 이 페이지는 [KAIST MAC랩](http://mac.kaist.ac.kr) 에서 만들었습니다.
 
-## 한글
+0. 시작하기
+-----------
 
-You can use the [editor on GitHub](https://github.com/maclab-kaist/DeepArt/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### 1. [프로젝트에 관하여](about.md)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 2. [환경 설정하기](setting.md)
 
-### Markdown
+### 3. [튜토리얼 시작하기](start.md)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 4. [딥러닝 기초 정보](Deep_basic.md)
 
-```markdown
-Syntax highlighted code block
+1. Deep-Dream
+-------------
 
-# Header 1
-## Header 2
-### Header 3
+### 이것은
 
-- Bulleted
-- List
+### 더미
 
-1. Numbered
-2. List
+### 메뉴
 
-**Bold** and _Italic_ and `Code` text
+2. Style-Transfer
+-----------------
 
-[Link](url) and ![Image](src)
-```
+### 이것은
+
+### 더미
+
+### 메뉴
+
+3. Sound Classification using t-sne
+-----------------------------------
+
+### 이것은
+
+### 더미
+
+### 메뉴
+
+4. Neural Network를 이용한 자동작곡
+-----------------------------------
+
+### 이것은
+
+### 더미
+
+### 메뉴
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
