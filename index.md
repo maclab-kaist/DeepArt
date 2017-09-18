@@ -23,7 +23,7 @@
 
 ## 2. Style-Transfer
 
-1. [Style Transfer by hnarayanan](style_transfer.html)
+1. [Style Transfer by hnarayanan](style_transfer.md)
 
 이것은
 
