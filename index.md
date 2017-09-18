@@ -1,3 +1,7 @@
+# 딥러닝을 이용한 예술 튜토리얼
+
+이 페이지는 [KAIST MAC랩](http://mac.kaist.ac.kr) 에서 만들었습니다.
+
 ## 한글
 
 You can use the [editor on GitHub](https://github.com/maclab-kaist/DeepArt/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
