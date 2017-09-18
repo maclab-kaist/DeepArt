@@ -3,7 +3,7 @@
 
 이 페이지는 [KAIST MAC랩](http://mac.kaist.ac.kr) 에서 만들었습니다.
 
-0. 시작하기
+## 0. 시작하기
 -----------
 
 ### 1. [프로젝트에 관하여](about.md)
@@ -14,7 +14,7 @@
 
 ### 4. [딥러닝 기초 정보](Deep_basic.md)
 
-1. Deep-Dream
+## 1. Deep-Dream
 -------------
 
 ### 이것은
@@ -23,7 +23,7 @@
 
 ### 메뉴
 
-2. Style-Transfer
+## 2. Style-Transfer
 -----------------
 
 ### 이것은
@@ -32,7 +32,7 @@
 
 ### 메뉴
 
-3. Sound Classification using t-sne
+## 3. Sound Classification using t-sne
 -----------------------------------
 
 ### 이것은
