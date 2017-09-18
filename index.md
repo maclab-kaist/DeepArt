@@ -5,45 +5,45 @@
 
 ## 0. 시작하기
 
-### 1. [프로젝트에 관하여](about.md)
+1. [프로젝트에 관하여](about.md)
 
-### 2. [환경 설정하기](setting.md)
+2. [환경 설정하기](setting.md)
 
-### 3. [튜토리얼 시작하기](start.md)
+3. [튜토리얼 시작하기](start.md)
 
-### 4. [딥러닝 기초 정보](Deep_basic.md)
+4. [딥러닝 기초 정보](Deep_basic.md)
 
 ## 1. Deep-Dream
 
-### 이것은
+이것은
 
-### 더미
+더미
 
-### 메뉴
+메뉴
 
 ## 2. Style-Transfer
 
-### 이것은
+이것은
 
-### 더미
+더미
 
-### 메뉴
+메뉴
 
 ## 3. Sound Classification using t-sne
 
-### 이것은
+이것은
 
-### 더미
+더미
 
-### 메뉴
+메뉴
 
 ## 4. Neural Network를 이용한 자동작곡
 
-### 이것은
+이것은
 
-### 더미
+더미
 
-### 메뉴
+메뉴
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
