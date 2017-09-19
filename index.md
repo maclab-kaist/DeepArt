@@ -15,6 +15,8 @@
 
 ## 1. Deep-Dream
 
+1. [Deep Dream by Chollet](8.2-deep-dream.md)
+
 이것은
 
 더미
