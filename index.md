@@ -51,7 +51,7 @@
 
 ## 4. Neural Network를 이용한 자동작곡
 
-1. 이것은
+1. Melody RNN using midi data (melody_rnn/melody_RNN.md)
 
 2. 더미
 
