@@ -1,4 +1,4 @@
-[&larr; Back to Index](index.html)
+[&larr; Back to Index](../index.html)
 
 # 신경망 모델을 사용한 멜로디 시퀀스 학습 
 
