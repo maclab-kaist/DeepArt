@@ -1,5 +1,5 @@
 
-[&larr; Back to Index](index.html)
+[&larr; Back to Index](index.md)
 
 Jupyter Basics
 =======================
@@ -149,4 +149,4 @@ x
 
 
 
-[&larr; Back to Index](index.html)
+[&larr; Back to Index](index.md)
