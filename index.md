@@ -15,7 +15,7 @@
 
 ## 1. Deep-Dream
 
-1. [Deep Dream by Chollet](8.2-deep-dream.md)
+1. [Deep Dream by Chollet](deep_dream/8.2-deep-dream.md)
 
 이것은
 
@@ -25,7 +25,7 @@
 
 ## 2. Style-Transfer
 
-1. [Style Transfer by hnarayanan](style_transfer.md)
+1. [Style Transfer by hnarayanan](style_transfer/style_transfer.md)
 
 이것은
 
