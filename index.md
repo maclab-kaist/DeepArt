@@ -13,9 +13,9 @@
 
 ~~4. [딥러닝 기초 정보](Deep_basic.md)~~
 
-5. [파이썬 기초 튜토리얼](python_basic.md)
+5. [파이썬 기초 튜토리얼](python_basics.md)
 
-6. [numpy 기초 튜토리얼](numpy_basic.md)
+6. [numpy 기초 튜토리얼](numpy_basics.md)
 
 7. [ipython 기초 튜토리얼](get_good_at_ipython.md)
 
