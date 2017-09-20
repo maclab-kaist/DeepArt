@@ -1,4 +1,4 @@
-
+[&larr; Back to Index](../index.md)
 
 ```python
 import keras
@@ -503,4 +503,6 @@ reference image.
 * "Style" can be captured by the internal correlations of the activations of different layers of a convnet.
 * Hence deep learning allows style transfer to be formulated as an optimization process using a loss defined with a pre-trained convnet.
 * Starting from this basic idea, many variants and refinements are possible!
+
+[&larr; Back to Index](../index.md)
 
