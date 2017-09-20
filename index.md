@@ -7,11 +7,19 @@
 
 1. [프로젝트에 관하여](about.md)
 
-2. [환경 설정하기](setting.md)
+~~2. [환경 설정하기](setting.md)
 
-3. [튜토리얼 시작하기](start.md)
+~~3. [튜토리얼 시작하기](start.md)
 
-4. [딥러닝 기초 정보](Deep_basic.md)
+~~4. [딥러닝 기초 정보](Deep_basic.md)
+
+5. [파이썬 기초 튜토리얼](python_basic.md)
+
+6. [numpy 기초 튜토리얼](numpy_basic.md)
+
+7. [ipython 기초 튜토리얼](get_good_at_ipython.md)
+
+8. [ipython audio 튜토리얼](ipython_audio.md)
 
 ## 1. Deep-Dream
 
@@ -27,34 +35,24 @@
 
 1. [Style Transfer by hnarayanan](style_transfer/style_transfer.md)
 
-이것은
+2. [Style Transfer by Chollet](style_transfer/style_transfer_fchollet.md)
 
-더미
+3. 더미
 
-메뉴
+4. 메뉴
 
 ## 3. Sound Classification using t-sne
 
-이것은
+1. 이것은
 
-더미
+2. 더미
 
-메뉴
+3. 메뉴
 
 ## 4. Neural Network를 이용한 자동작곡
 
-이것은
+1. 이것은
 
-더미
+2. 더미
 
-메뉴
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/maclab-kaist/DeepArt/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+3. 메뉴
