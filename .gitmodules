@@ -1,0 +1,3 @@
+[submodule "classify_tsne.md"]
+	path = classify_tsne.md
+	url = https://github.com/khlukekim/tutorial_classify_and_visualize_musical_instrument
