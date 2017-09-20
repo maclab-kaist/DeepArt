@@ -471,15 +471,15 @@ plt.show()
 ```
 
 
-![png](8.3-neural-style-transfer_files/8.3-neural-style-transfer_28_0.png)
+![png](images/8.3-neural-style-transfer_28_0.png)
 
 
 
-![png](8.3-neural-style-transfer_files/8.3-neural-style-transfer_28_1.png)
+![png](images/8.3-neural-style-transfer_28_1.png)
 
 
 
-![png](8.3-neural-style-transfer_files/8.3-neural-style-transfer_28_2.png)
+![png](images/8.3-neural-style-transfer_28_2.png)
 
 
 
