@@ -7,11 +7,11 @@
 
 1. [프로젝트에 관하여](about.md)
 
-~~2. [환경 설정하기](setting.md)
+~~2. [환경 설정하기]~~(setting.md)
 
-~~3. [튜토리얼 시작하기](start.md)
+~~3. [튜토리얼 시작하기]~~(start.md)
 
-~~4. [딥러닝 기초 정보](Deep_basic.md)
+~~4. [딥러닝 기초 정보]~~(Deep_basic.md)
 
 5. [파이썬 기초 튜토리얼](python_basic.md)
 
