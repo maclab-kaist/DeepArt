@@ -25,21 +25,15 @@
 
 1. [Deep Dream by Chollet](deep_dream/8.2-deep-dream.md)
 
-이것은
-
-더미
-
-메뉴
-
 ## 2. Style-Transfer
 
 1. [Style Transfer by hnarayanan](style_transfer/style_transfer.md)
 
 2. [Style Transfer by Chollet](style_transfer/style_transfer_fchollet.md)
 
-3. 더미
+3. [Neural style blog](http://www.anishathalye.com/2015/12/19/an-ai-that-can-mimic-any-artist/)
 
-4. 메뉴
+4. [Neural style implementation](https://github.com/anishathalye/neural-style)
 
 ## 3. Sound Classification using t-sne
 
