@@ -85,7 +85,7 @@ librosa.display.waveplot(x, sr=sr)
 
 
 
-![png](ipython_audio_files/ipython_audio_22_1.png)
+![png](images/ipython_audio_22_1.png)
 
 
 Display a spectrogram using [`librosa.display.specshow`](https://librosa.github.io/librosa/generated/librosa.display.specshow.html):
@@ -106,7 +106,7 @@ librosa.display.specshow(Xdb, sr=sr, x_axis='time', y_axis='hz')
 
 
 
-![png](ipython_audio_files/ipython_audio_24_1.png)
+![png](images/ipython_audio_24_1.png)
 
 
 ## Playing Audio
