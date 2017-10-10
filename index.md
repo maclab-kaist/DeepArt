@@ -37,7 +37,7 @@
 
 ## 3. Sound Classification using t-sne
 
-1. [t-sne visualization](classify_tsne.md/classify_tsne.md)
+1. [t-sne visualization](classify_tsne.md)
 
 ## 4. Neural Network를 이용한 자동작곡
 
