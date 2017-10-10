@@ -35,9 +35,15 @@
 
 4. [Neural style implementation](https://github.com/anishathalye/neural-style)
 
-## 3. Sound Classification using t-sne
+## 3. Sound Classification and t-SNE
 
-1. [t-sne visualization](classify_tsne.md)
+1. [데이터 준비하고 전처리하기](classify_tsne/classify_tsne_1_prepare_data.md)
+
+2. [스펙트로그램 추출하기](classify_tsne/classify_tsne_2_extract_spectrum.md)
+
+3. [모델 만들고 학습시키기](classify_tsne/classify_tsne_3_train.md)
+
+4. [t-SNE로 분석하기](classify_tsne/classify_tsne_4_tsne.md)
 
 ## 4. Neural Network를 이용한 자동작곡
 
