@@ -13,48 +13,36 @@
 
 4. [딥러닝 기초 정보](Deep_basic.md)
 
+5. [파이썬 기초 튜토리얼](python_basics.md)
+
+6. [numpy 기초 튜토리얼](numpy_basics.md)
+
+7. [ipython 기초 튜토리얼](get_good_at_ipython.md)
+
+8. [ipython audio 튜토리얼](ipython_audio.md)
+
 ## 1. Deep-Dream
 
-1. [Deep Dream by Chollet](8.2-deep-dream.md)
-
-이것은
-
-더미
-
-메뉴
+1. [Deep Dream by Chollet](deep_dream/8.2-deep-dream.md)
 
 ## 2. Style-Transfer
 
-1. [Style Transfer by hnarayanan](style_transfer.md)
+1. [Style Transfer by hnarayanan](style_transfer/style_transfer.md)
 
-이것은
+2. [Style Transfer by Chollet](style_transfer/style_transfer_fchollet.md)
 
-더미
+3. [Neural style blog](http://www.anishathalye.com/2015/12/19/an-ai-that-can-mimic-any-artist/)
 
-메뉴
+4. [Neural style implementation](https://github.com/anishathalye/neural-style)
 
 ## 3. Sound Classification using t-sne
 
-이것은
-
-더미
-
-메뉴
+1. [t-sne visualization](classify_tsne.md/classify_tsne.md)
 
 ## 4. Neural Network를 이용한 자동작곡
 
-이것은
+1. [Melody RNN using midi data](melody_rnn/melody_RNN.md)
 
-더미
+2. 더미
 
-메뉴
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/maclab-kaist/DeepArt/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+3. 메뉴

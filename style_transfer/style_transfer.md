@@ -1,3 +1,5 @@
+[&larr; Back to Index](../index.md)
+
 Convolutional neural networks for artistic style transfer
 =========================================================
 
@@ -371,3 +373,5 @@ As beautiful as the output of this code can be, the process we use to generate i
 In an upcoming article (and corresponding iPython notebook), we're going to replace this the optimisation problem with an image transformation CNN, which in turn uses the VGG16 network as before to measure losses. When this transformation network is trained on many images given a fixed style image, we end up with a fully feed-forward CNN that we can apply for style transfer. This gives us a 1000x speed up over this implementation, making it suitable for a the *Stylist* webapp.
 
 But more on that later.
+
+[&larr; Back to Index](../index.md)
