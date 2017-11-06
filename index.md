@@ -7,19 +7,15 @@
 
 1. [프로젝트에 관하여](about.md)
 
-2. [환경 설정하기](setting.md)
+2.1 [Python 설치 / 시작하기 (musicinformationretrieval.com)](http://musicinformationretrieval.com/python_basics.html)
 
-3. [튜토리얼 시작하기](start.md)
+2.2 [Python 튜토리얼 (www.learnpython.org)] (https://www.learnpython.org/en/Welcome)
 
-4. [딥러닝 기초 정보](Deep_basic.md)
+3. [Numpy 튜토리얼 (musicinformationretrieval.com)](http://musicinformationretrieval.com/numpy_basics.html)
 
-5. [파이썬 기초 튜토리얼](python_basics.md)
+4. [jupyter notebook 튜토리얼 (musicinformationretrieval.com)](http://musicinformationretrieval.com/get_good_at_ipython.html)
 
-6. [numpy 기초 튜토리얼](numpy_basics.md)
-
-7. [ipython 기초 튜토리얼](get_good_at_ipython.md)
-
-8. [ipython audio 튜토리얼](ipython_audio.md)
+5. [jupyter notebook audio 튜토리얼 (musicinformationretrieval.com)]http://musicinformationretrieval.com/ipython_audio.html)
 
 ## 1. Deep-Dream
 
@@ -27,13 +23,23 @@
 
 ## 2. Style-Transfer
 
-1. [Style Transfer by hnarayanan](style_transfer/style_transfer.md)
+1. Style-Transfer 소개
 
-2. [Style Transfer by Chollet](style_transfer/style_transfer_fchollet.md)
+2. Style-Transfer로 나만의 그림 만들기
 
-3. [Neural style blog](http://www.anishathalye.com/2015/12/19/an-ai-that-can-mimic-any-artist/)
+3. Style-Transfer의 옵션 바꿔보기-1. style의 수준 바꾸기
 
-4. [Neural style implementation](https://github.com/anishathalye/neural-style)
+4. Style-Transfer의 옵션 바꿔보기-2. style의 색상, 부분 적용
+
+5. Fast-Style Transfer : 고정된 스타일로의 빠른 transfer
+
+6. Fast-Style Transfer로 나만의 비디오 만들기
+
+7. 더 알아보기 - 1. Style Transfer를 이용한 다른 예시들
+
+8. 더 알아보기 - 2. GAN을 이용한 Style Transfer
+
+9. 더 알아보기 - 3. Audio Style Transfer
 
 ## 3. Sound Classification and t-SNE
 
