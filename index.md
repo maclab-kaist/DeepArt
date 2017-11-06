@@ -19,7 +19,12 @@
 
 ## 1. Deep-Dream
 
-1. [Deep Dream by Chollet](deep_dream/8.2-deep-dream.md)
+1. Deep-Dream 소개
+
+2. Deep-Dream 사용하기
+
+3. Deep-Dream의 응용
+
 
 ## 2. Style-Transfer
 
