@@ -5,7 +5,7 @@
 
 ## 0. 시작하기
 
-1. [프로젝트에 관하여](about.md)
+1. 프로젝트에 관하여
 
 2.1 [Python 설치 / 시작하기 (musicinformationretrieval.com)](http://musicinformationretrieval.com/python_basics.html)
 
