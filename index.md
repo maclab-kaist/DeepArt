@@ -15,7 +15,7 @@
 
 4. [jupyter notebook 튜토리얼 (musicinformationretrieval.com)](http://musicinformationretrieval.com/get_good_at_ipython.html)
 
-5. [jupyter notebook audio 튜토리얼 (musicinformationretrieval.com)]http://musicinformationretrieval.com/ipython_audio.html)
+5. [jupyter notebook audio 튜토리얼 (musicinformationretrieval.com)](http://musicinformationretrieval.com/ipython_audio.html)
 
 ## 1. Deep-Dream
 
