@@ -23,7 +23,7 @@
 
 2. Deep-Dream 사용하기
 
-3. Deep-Dream의 응용
+3. Deep-Dream 응용
 
 
 ## 2. Style-Transfer
