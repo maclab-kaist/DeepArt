@@ -9,7 +9,7 @@
 
 2.1 [Python 설치 / 시작하기 (musicinformationretrieval.com)](http://musicinformationretrieval.com/python_basics.html)
 
-2.2 [Python 튜토리얼 (www.learnpython.org)] (https://www.learnpython.org/en/Welcome)
+2.2 [Python 튜토리얼 (www.learnpython.org)](https://www.learnpython.org/en/Welcome)
 
 3. [Numpy 튜토리얼 (musicinformationretrieval.com)](http://musicinformationretrieval.com/numpy_basics.html)
 
