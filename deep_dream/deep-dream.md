@@ -271,9 +271,9 @@ save_img(img, fname=result_prefix + '.png')
 위와 같이 Deep Dream에 대한 소개, 직접 그림 만들어보기, 코딩 해보기 까지 둘러보았습니다.<br/>
 위의 내용에 대하여 추가적으로 궁금하신 점이 있다면 아래의 메일주소로 연락주시면 답변드리도록 하겠습니다. 읽어주셔서 감사합니다~! <br/>
 <p align="right"> 
-이종필
+<b>이종필<br/>
 카이스트 문화기술대학원<br/>
-jongpillee.brian@gmail.com
+jongpillee.brian@gmail.com</b>
 </p><br/>
 
 
