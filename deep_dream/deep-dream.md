@@ -73,7 +73,8 @@ Deep dream을 이용하여 나만의 추상적인 그림을 만들어 보고자 
 <h2><a name="d3" style="color:black; text-decoration:none;">Deep Dream 코딩 해보기</a></h2>
 
 위의 두 섹션에서 Deep Dream에 대하여 알아보고, 기성 페이지를 이용하여 직접 생성해보는 방법에 대하여 알아보았습니다.<br/>
-본 섹션에서는 내용을 좀 더 심화하여 직접 코딩하면서 해당 내용을 수행해보고자 합니다. 본 내용은 <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb</a>의 내용을 기반으로 작성하였습니다.
+본 섹션에서는 내용을 좀 더 심화하여 직접 코딩하면서 해당 내용을 수행해보고자 합니다. <br/>
+본 내용은 <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">텐서플로우의 deep dream 튜토리얼</a> 내용을 기반으로 작성하였습니다.
 
 
 
