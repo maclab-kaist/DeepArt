@@ -97,7 +97,7 @@ synth_lead
 vocal
 ```
 
-<h2><a name="exactline">Linking Directly to a Specific Location</a></h2>
+<h2 name="exactline">Linking Directly to a Specific Location</h2>
 
 
 레이블은 일반적으로 어떤 학습 모델이 찾아야 할 답(이 경우에는 악기의 종류)을 말합니다.
