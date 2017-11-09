@@ -95,7 +95,8 @@ import argparse
 
 from keras.applications import inception_v3
 from keras import backend as K
-```<br/>
+```
+<br/>
 
 이제 학습된 인공신경망을 불러와야 합니다. ImageNet이라는 큰 데이터셋에서 학습한 모델을 아래의 코드로 쉽게 불러올 수 있습니다.
 ```
@@ -105,7 +106,8 @@ model = inception_v3.InceptionV3(weights='imagenet',
                                  include_top=False)
 dream = model.input
 print('Model loaded.')
-```<br/>
+```
+<br/>
 
 
 인공신경망 내의 각 층들이 어떤 이름을 가지고 있는지를 알아보기 위하여, 다음의 작업을 수행하면 층의 이름이 저장됩니다.
@@ -113,7 +115,8 @@ print('Model loaded.')
 # Get the symbolic outputs of each "key" layer (we gave them unique names).
 layer_dict = dict([(layer.name, layer) for layer in model.layers])
 print(layer_dict)
-```<br/>
+```
+<br/>
 
 
 그러고 나면, 사용할 층을 선택해주어야 합니다.<br/>
@@ -127,7 +130,8 @@ settings = {
         'mixed5': 1.5,
     },
 }
-```<br/>
+```
+<br/>
 
 
 이제 부터가 중요한 부분입니다.<br/>
@@ -186,7 +190,8 @@ def gradient_ascent(x, iterations, step, max_loss=None):
         print('..Loss value at', i, ':', loss_value)
         x += step * grad_values
     return x
-```<br/>
+```
+<br/>
 
 
 
