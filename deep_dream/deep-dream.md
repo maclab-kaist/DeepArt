@@ -30,6 +30,9 @@
 
 **본 튜토리얼**에서는 다음 섹션에서 이러한 Deep Dream을 기성 플랫폼을 이용하여 손쉽게 사용할 수 있는 방법에 대하여 소개하고, 더 나아가 마지막 섹션에서 직접 코딩을 통하여 해당 작업을 수행해 봅니다.
 
+
+
+<br/><br/>
 <h2><a name="d2" style="color:black; text-decoration:none;">Deep Dream 나만의 그림 만들기</a></h2>
 
 Deep dream을 이용하여 나만의 추상적인 그림을 만들어 보고자 합니다.<br/><br/>
@@ -70,14 +73,17 @@ Deep dream을 이용하여 나만의 추상적인 그림을 만들어 보고자 
 <a href="http://barabeke.it/portfolio/deep-dream-generator" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">http://barabeke.it/portfolio/deep-dream-generator</a><br/>
 
 
+
+
+<br/><br/>
 <h2><a name="d3" style="color:black; text-decoration:none;">Deep Dream 코딩 해보기</a></h2>
 
 위의 두 섹션에서 Deep Dream에 대하여 알아보고,<br/> 
 기성 페이지를 이용하여 직접 생성해보는 방법에 대하여 알아보았습니다.<br/>
 본 섹션에서는 내용을 좀 더 심화하여 직접 코딩하면서 해당 내용을 수행해보고자 합니다. <br/>
-본 내용은 <a href="./deepdream.py" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">케라스 Deep Dream 튜토리얼</a> 내용을 기반으로 작성하였습니다.
+본 내용은 <a href="https://github.com/fchollet/keras/blob/master/examples/deep_dream.py" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">케라스 Deep Dream 튜토리얼</a> 내용을 기반으로 작성하였습니다.
 
-<a href="./deepdream.py" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">해당 코드</a>와 <a href="./sample.jpg" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">샘플 이미지</a>를 다운로드 하신 후,<br/> "python deepdream.py sample.jpg results/dream"의 커멘드 만으로 직접 코드를 돌려보실 수 있습니다.<br/>
+<a href="./deepdream.py" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">해당 코드</a>와 <a href="./sample.jpg" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">샘플 이미지</a>를 다운로드 하신 후,<br/> "python deepdream.py sample.jpg dream"의 커멘드 만으로 직접 코드를 돌려보실 수 있습니다.<br/>
 
 해당 코드를 자세히 들여다 보도록 하겠습니다.<br/>
 먼저 아래에 사용된 dependency를 준비해야 합니다. 
