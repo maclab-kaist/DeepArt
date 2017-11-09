@@ -1,5 +1,5 @@
 # 
-<h2><a name="d1" style="color:black; text-decoration:none;">Deep Dream 소개</a></h2>
+<h1><a name="d1" style="color:black; text-decoration:none;">Deep Dream 소개</a></h1>
 
 
 인공 신경망에서 학습된 뉴런의 대다수는 어떠한 추상 또는 패턴을 탐지합니다.</br>
