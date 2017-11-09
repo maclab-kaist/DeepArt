@@ -75,20 +75,119 @@ Deep dream을 이용하여 나만의 추상적인 그림을 만들어 보고자 
 위의 두 섹션에서 Deep Dream에 대하여 알아보고,<br/> 
 기성 페이지를 이용하여 직접 생성해보는 방법에 대하여 알아보았습니다.<br/>
 본 섹션에서는 내용을 좀 더 심화하여 직접 코딩하면서 해당 내용을 수행해보고자 합니다. <br/>
-본 내용은 <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">텐서플로우 Deep Dream 튜토리얼</a> 내용을 기반으로 작성하였습니다.
+본 내용은 <a href="./deepdream.py" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">케라스 Deep Dream 튜토리얼</a> 내용을 기반으로 작성하였습니다.
 
+<a href="./deepdream.py" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">해당 코드</a>와 <a href="./sample.jpg" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">샘플 이미지</a>를 다운로드 하신 후,<br/> "python deepdream.py sample.jpg results/dream"의 커멘드 만으로 직접 코드를 돌려보실 수 있습니다.<br/>
+
+해당 코드를 자세히 들여다 보도록 하겠습니다.<br/>
+먼저 아래에 사용된 dependency를 준비해야 합니다. 
 ```
-# boilerplate code
-from __future__ import print_function
-import os
-from io import BytesIO
+from keras.preprocessing.image import load_img, img_to_array
 import numpy as np
-from functools import partial
-import PIL.Image
-from IPython.display import clear_output, Image, display, HTML
+import scipy
+import argparse
 
-import tensorflow as tf
+from keras.applications import inception_v3
+from keras import backend as K
 ```
+
+이제 학습된 인공신경망을 불러와야 합니다. ImageNet이라는 큰 데이터셋에서 학습한 모델을 아래의 코드로 쉽게 불러올 수 있습니다.
+```
+# Build the InceptionV3 network with our placeholder.
+# The model will be loaded with pre-trained ImageNet weights.
+model = inception_v3.InceptionV3(weights='imagenet',
+                                 include_top=False)
+dream = model.input
+print('Model loaded.')
+```
+
+
+인공신경망 내의 각 층들이 어떤 이름을 가지고 있는지를 알아보기 위하여, 다음의 작업을 수행하면 층의 이름이 저장됩니다.
+```
+# Get the symbolic outputs of each "key" layer (we gave them unique names).
+layer_dict = dict([(layer.name, layer) for layer in model.layers])
+print(layer_dict)
+```
+
+
+그러고 나면, 사용할 층을 선택해주어야 합니다.<br/>
+단일 층으로 할 수도 있으나 아래와 같이 여러층의 다양한 조합을 해볼 수 있습니다.
+```
+settings = {
+    'features': {
+        'mixed2': 0.2,
+        'mixed3': 0.5,
+        'mixed4': 2.,
+        'mixed5': 1.5,
+    },
+}
+```
+
+
+이제 부터가 중요한 부분입니다.<br/>
+```
+# Define the loss.
+loss = K.variable(0.)
+for layer_name in settings['features']:
+    # Add the L2 norm of the features of a layer to the loss.
+    assert layer_name in layer_dict.keys(), 'Layer ' + layer_name + ' not found in model.'
+    coeff = settings['features'][layer_name]
+    x = layer_dict[layer_name].output
+    # We avoid border artifacts by only involving non-border pixels in the loss.
+    scaling = K.prod(K.cast(K.shape(x), 'float32'))
+    if K.image_data_format() == 'channels_first':
+        loss += coeff * K.sum(K.square(x[:, :, 2: -2, 2: -2])) / scaling
+    else:
+        loss += coeff * K.sum(K.square(x[:, 2: -2, 2: -2, :])) / scaling
+
+# Compute the gradients of the dream wrt the loss.
+grads = K.gradients(loss, dream)[0]
+# Normalize gradients.
+grads /= K.maximum(K.mean(K.abs(grads)), 1e-7)
+
+# Set up function to retrieve the value
+# of the loss and gradients given an input image.
+outputs = [loss, grads]
+fetch_loss_and_grads = K.function([dream], outputs)
+
+
+def eval_loss_and_grads(x):
+    outs = fetch_loss_and_grads([x])
+    loss_value = outs[0]
+    grad_values = outs[1]
+    return loss_value, grad_values
+
+
+def resize_img(img, size):
+    img = np.copy(img)
+    if K.image_data_format() == 'channels_first':
+        factors = (1, 1,
+                   float(size[0]) / img.shape[2],
+                   float(size[1]) / img.shape[3])
+    else:
+        factors = (1,
+                   float(size[0]) / img.shape[1],
+                   float(size[1]) / img.shape[2],
+                   1)
+    return scipy.ndimage.zoom(img, factors, order=1)
+
+
+def gradient_ascent(x, iterations, step, max_loss=None):
+    for i in range(iterations):
+        loss_value, grad_values = eval_loss_and_grads(x)
+        if max_loss is not None and loss_value > max_loss:
+            break
+        print('..Loss value at', i, ':', loss_value)
+        x += step * grad_values
+    return x
+```
+
+
+
+
+
+
+
 
 
 
