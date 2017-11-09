@@ -19,11 +19,11 @@
 
 ## 1. Deep-Dream
 
-1. <a href="deep_dream/deep-dream.html#exactline">Deep Dream</a>
+1. <a href="deep_dream/deep-dream.html#d1">Deep Dream 소개</a>
 
-2. Deep-Dream 사용하기
+2. <a href="deep_dream/deep-dream.html#d2">Deep Dream으로 나만의 그림 만들기</a>
 
-3. Deep-Dream 응용
+3. <a href="deep_dream/deep-dream.html#d3">Deep Dream 코딩 해보기</a>
 
 
 ## 2. Style-Transfer
