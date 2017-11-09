@@ -135,6 +135,7 @@ settings = {
 
 
 이제 부터가 중요한 부분입니다.<br/>
+
 ```
 # Define the loss.
 loss = K.variable(0.)
@@ -149,12 +150,18 @@ for layer_name in settings['features']:
         loss += coeff * K.sum(K.square(x[:, :, 2: -2, 2: -2])) / scaling
     else:
         loss += coeff * K.sum(K.square(x[:, 2: -2, 2: -2, :])) / scaling
+```
+<br/>
 
+```
 # Compute the gradients of the dream wrt the loss.
 grads = K.gradients(loss, dream)[0]
 # Normalize gradients.
 grads /= K.maximum(K.mean(K.abs(grads)), 1e-7)
+```
+<br/>
 
+```
 # Set up function to retrieve the value
 # of the loss and gradients given an input image.
 outputs = [loss, grads]
@@ -166,22 +173,12 @@ def eval_loss_and_grads(x):
     loss_value = outs[0]
     grad_values = outs[1]
     return loss_value, grad_values
+```
+<br/>
 
 
-def resize_img(img, size):
-    img = np.copy(img)
-    if K.image_data_format() == 'channels_first':
-        factors = (1, 1,
-                   float(size[0]) / img.shape[2],
-                   float(size[1]) / img.shape[3])
-    else:
-        factors = (1,
-                   float(size[0]) / img.shape[1],
-                   float(size[1]) / img.shape[2],
-                   1)
-    return scipy.ndimage.zoom(img, factors, order=1)
 
-
+```
 def gradient_ascent(x, iterations, step, max_loss=None):
     for i in range(iterations):
         loss_value, grad_values = eval_loss_and_grads(x)
@@ -194,12 +191,69 @@ def gradient_ascent(x, iterations, step, max_loss=None):
 <br/>
 
 
+```
+def resize_img(img, size):
+    img = np.copy(img)
+    if K.image_data_format() == 'channels_first':
+        factors = (1, 1,
+                   float(size[0]) / img.shape[2],
+                   float(size[1]) / img.shape[3])
+    else:
+        factors = (1,
+                   float(size[0]) / img.shape[1],
+                   float(size[1]) / img.shape[2],
+                   1)
+    return scipy.ndimage.zoom(img, factors, order=1)
+```
+<br/>
+
+
+```
+# Playing with these hyperparameters will also allow you to achieve new effects
+step = 0.01  # Gradient ascent step size
+num_octave = 3  # Number of scales at which to run gradient ascent
+octave_scale = 1.4  # Size ratio between scales
+iterations = 20  # Number of ascent steps per scale
+max_loss = 10.
+```
+<br/>
+
+
+
+```
+successive_shapes = [original_shape]
+for i in range(1, num_octave):
+    shape = tuple([int(dim / (octave_scale ** i)) for dim in original_shape])
+    successive_shapes.append(shape)
+successive_shapes = successive_shapes[::-1]
+original_img = np.copy(img)
+shrunk_original_img = resize_img(img, successive_shapes[0])
+```
+<br/>
 
 
 
 
 
 
+```
+for shape in successive_shapes:
+    print('Processing image shape', shape)
+    img = resize_img(img, shape)
+    img = gradient_ascent(img,
+                          iterations=iterations,
+                          step=step,
+                          max_loss=max_loss)
+    upscaled_shrunk_original_img = resize_img(shrunk_original_img, shape)
+    same_size_original = resize_img(original_img, shape)
+    lost_detail = same_size_original - upscaled_shrunk_original_img
+
+    img += lost_detail
+    shrunk_original_img = resize_img(original_img, shape)
+
+save_img(img, fname=result_prefix + '.png')
+```
+<br/>
 
 
 
