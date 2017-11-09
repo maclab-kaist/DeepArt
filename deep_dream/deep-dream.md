@@ -39,35 +39,35 @@ Deep dream을 이용하여 나만의 추상적인 그림을 만들어 보고자 
 먼저, 로그인을 한 후 (페이스북, 구글 플러스, 트위터 계정으로 손쉽게 로그인 할 수 있습니다), 
 <p align="center"> 
 <img src="./login.png">
-</p>
+</p><br/>
 
 우측 상단의 "Generate" 버튼을 클릭하시면, 
 <p align="center"> 
 <img src="./generate.png">
-</p>
+</p><br/>
 
 다음과 같은 페이지로 이동합니다.<br/>
 "Deep Style", "Thin Style"와 같은 내용은 다음 튜토리얼에서 다룰 것이기에 본 페이지에서는 바로 "Deep Dream"항목을 클릭합니다. (다음 튜토리얼 Style Transfer 내용을 숙지하신 후 역시 해당사이트에서 바로 이용하실 수도 있습니다.)
 <p align="center"> 
 <img src="./style.png">
-</p>
+</p><br/>
 
 아래와 같은 화면이 나오는데, "Settings"를 클릭하면 아래와 같이 인공신경망의 다양한 계층들을 선택할 수 있게 나옵니다. (아래의 "Show All layers"를 클릭하시면 더욱 많은 계층을 볼 수가 있습니다.)
 <p align="center"> 
 <img src="./settings.png">
-</p>
+</p><br/>
 <p align="center"> 
 <img src="./layers.png">
-</p>
+</p><br/>
 
 원하는 풍의 이미지를 선택하신 후, 맨 밑의 아래 "Generate"버튼을 클릭하시면 최종 결과물을 얻을 수 있습니다.
 <p align="center"> 
 <img src="./run.png">
-</p>
+</p><br/>
 
-위와 같은 방법을 통하여 우리는 다양한 작품을 만들 수가 있는데, 아래 링크들은 Deep Dream을 이용한 작가들의 작품 예시입니다.
-<a href="http://www.miketyka.com/?s=deepdream" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">http://www.miketyka.com/?s=deepdream</a>
-<a href="http://barabeke.it/portfolio/deep-dream-generator" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">http://barabeke.it/portfolio/deep-dream-generator</a>
+위와 같은 방법을 통하여 우리는 다양한 작품을 만들 수가 있는데, 아래 링크들은 Deep Dream을 이용한 작가들의 작품 예시입니다.<br/>
+<a href="http://www.miketyka.com/?s=deepdream" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">http://www.miketyka.com/?s=deepdream</a><br/>
+<a href="http://barabeke.it/portfolio/deep-dream-generator" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">http://barabeke.it/portfolio/deep-dream-generator</a><br/>
 
 
 <h2><a name="d3" style="color:black; text-decoration:none;">Deep Dream 코딩 해보기</a></h2>
