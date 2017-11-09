@@ -58,17 +58,17 @@
 
 ## 4. Neural Network를 이용한 자동작곡
 
-1. [소개 및 데이터 받아오기](melody_rnn/MelodyRNN_01_introduction.md)
+1. [소개 및 데이터 받아오기](melody_rnn/MelodyRNN_01_introduction.md)[(ipynb파일)](melody_rnn/MelodyRNN_01_introduction.ipynb)
 
-2. [텐서플로우 간단 Review](melody_rnn/MelodyRNN_02_Tensorflow_Quick_Review.md)
+2. [텐서플로우 간단 Review](melody_rnn/MelodyRNN_02_Tensorflow_Quick_Review.md)[(ipynb파일)](melody_rnn/MelodyRNN_02_Tensorflow_Quick_Review.ipynb)
 
-3. [텐서플로우 Basic RNN 모델](melody_rnn/MelodyRNN_03_Tensorflow_Basic_RNN_model.md)
+3. [텐서플로우 Basic RNN 모델](melody_rnn/MelodyRNN_03_Tensorflow_Basic_RNN_model.md)[(ipynb파일)](melody_rnn/MelodyRNN_03_Tensorflow_Basic_RNN_model.ipynb)
 
-4. [데이터 구조 결정 및 전처리](melody_rnn/MelodyRNN_04_Data_Preprocessing.md)
+4. [데이터 구조 결정 및 전처리](melody_rnn/MelodyRNN_04_Data_Preprocessing.md)[(ipynb파일)](melody_rnn/MelodyRNN_04_Data_Preprocessing.ipynb)
 
-5. [모델 정의 및 학습](melody_rnn/MelodyRNN_05_Model_Define_Train.md)
+5. [모델 정의 및 학습](melody_rnn/MelodyRNN_05_Model_Define_Train.md)[(ipynb파일)](melody_rnn/MelodyRNN_05_Model_Define_Train.ipynb)
 
-6. [학습된 모델을 사용한 멜로디 예측](melody_rnn/MelodyRNN_06_Model_Prediction.md)
+6. [학습된 모델을 사용한 멜로디 예측](melody_rnn/MelodyRNN_06_Model_Prediction.md)[(ipynb파일)](melody_rnn/MelodyRNN_06_Model_Prediction.ipynb)
 
 
 
