@@ -65,7 +65,7 @@ Deep dream을 이용하여 나만의 추상적인 그림을 만들어 보고자 
 <img src="./run.png">
 </p><br/>
 
-위와 같은 방법을 통하여 우리는 다양한 작품을 만들 수가 있는데, 아래 링크들은 Deep Dream을 이용한 작가들의 작품 예시입니다.<br/>
+위와 같은 방법을 통하여 우리는 다양한 작품을 만들 수가 있는데,<br/> 아래 링크들은 Deep Dream을 이용한 작가들의 작품 예시입니다.<br/>
 <a href="http://www.miketyka.com/?s=deepdream" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">http://www.miketyka.com/?s=deepdream</a><br/>
 <a href="http://barabeke.it/portfolio/deep-dream-generator" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">http://barabeke.it/portfolio/deep-dream-generator</a><br/>
 
