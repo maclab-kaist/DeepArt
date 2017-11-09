@@ -1,3 +1,8 @@
+.center-image{
+    margin: 0 auto;
+    display: block;
+}
+
 <h2><a name="d1" style="color:black; text-decoration:none;">Deep Dream 소개</a></h2>
 
 
@@ -12,10 +17,8 @@
 
 우리는 이러한 필터를 이용하여 다음과 같은 매우 혼란스러운 작품을 만들어 볼 수 있습니다.
 
-<p align="center">
-![Alt Text](https://cdn-images-1.medium.com/max/800/1*PKIwmv_VuRKnaECuKkIvtQ.gif)
+![Alt Text](https://cdn-images-1.medium.com/max/800/1*PKIwmv_VuRKnaECuKkIvtQ.gif){: .center-image }
 GIF출처: https://cdn-images-1.medium.com/max/800/1*PKIwmv_VuRKnaECuKkIvtQ.gif <br/><br/>
-</p>
 
 
 
