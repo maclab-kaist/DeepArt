@@ -77,7 +77,7 @@ Deep dream을 이용하여 나만의 추상적인 그림을 만들어 보고자 
 본 섹션에서는 내용을 좀 더 심화하여 직접 코딩하면서 해당 내용을 수행해보고자 합니다. <br/>
 본 내용은 <a href="https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/tutorials/deepdream/deepdream.ipynb" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">텐서플로우 Deep Dream 튜토리얼</a> 내용을 기반으로 작성하였습니다.
 
-'''
+```
 # boilerplate code
 from __future__ import print_function
 import os
@@ -88,7 +88,7 @@ import PIL.Image
 from IPython.display import clear_output, Image, display, HTML
 
 import tensorflow as tf
-'''
+```
 
 
 
