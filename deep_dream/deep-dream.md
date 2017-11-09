@@ -1,11 +1,11 @@
 # Deep Dream
 
-인공 신경망에서 학습된 뉴런의 대다수는 어떠한 추상 또는 패턴을 탐지합니다.
+인공 신경망에서 학습된 뉴런의 대다수는 어떠한 추상 또는 패턴을 탐지합니다.</br>
 이러한 추상 또는 패턴의 예를 보자면 다음과 같습니다.
 
 ![ex_screenshot](./filters.png)
 
-https://distill.pub/2017/feature-visualization/
+<div class="pull-right">(사진출처: https://distill.pub/2017/feature-visualization/)</div>
 
 https://deepdreamgenerator.com/generator (Deep Style, Thin Style, Deep Dream)
 
