@@ -110,7 +110,7 @@ print('Model loaded.')
 <br/>
 
 
-인공신경망 내의 각 층들이 어떤 이름을 가지고 있는지를 알아보기 위하여, 다음의 작업을 수행하면 층의 이름이 저장됩니다.
+인공신경망 내의 각 층들이 어떤 이름을 가지고 있는지를 알아보기 위하여, 다음의 작업을 수행하면 층의 이름이 layer_dict에 저장됩니다.
 ```
 # Get the symbolic outputs of each "key" layer (we gave them unique names).
 layer_dict = dict([(layer.name, layer) for layer in model.layers])
@@ -135,6 +135,7 @@ settings = {
 
 
 이제 부터가 중요한 부분입니다.<br/>
+선택한 층의 뉴론 반응 수치를 최대화 하기 위하여 아래의 코드를 사용합니다. coeff라는 변수에 위에서 설정한 선택한 각 층의 0.2, 0.5와 같은 수치를 저장하고, K.sum(K.square(x[:, :, 2: -2, 2: -2]))와 같이 해당 층의 최외각 pixel에 해당하는 수치를 제외한 (가장자리의 데이터까지 포함하면 checker-border artifact라는 현상이 생기는데 이를 피하기 위하여 위와 같이 합니다.) 모든 수치를 제곱하고 더하여 하나의 숫자로 표현합니다. 이 숫자가 Seed Image에 대한 해당 층에서의 반응 수치를 대표하게 됩니다. 우리는 이 수치를 최대화하도록 Seed Image에 해당 수치의 back-propagation값을 계속해서 Seed Image에 덧입힙니다. 
 
 ```
 # Define the loss.
@@ -153,6 +154,7 @@ for layer_name in settings['features']:
 ```
 <br/>
 
+Back-propagation해서 나오는 값을 gradients라고 하는데 이를 정의합니다.
 ```
 # Compute the gradients of the dream wrt the loss.
 grads = K.gradients(loss, dream)[0]
@@ -161,12 +163,13 @@ grads /= K.maximum(K.mean(K.abs(grads)), 1e-7)
 ```
 <br/>
 
+여기에서 dream이란 Seed Image를 말합니다. 이러한 인풋에 대한 해당 층에서의 반응 수치 대표값을 최대화하도록 back-propagation하여 gradients값이 나오도록 정의합니다.
+
 ```
 # Set up function to retrieve the value
 # of the loss and gradients given an input image.
 outputs = [loss, grads]
 fetch_loss_and_grads = K.function([dream], outputs)
-
 
 def eval_loss_and_grads(x):
     outs = fetch_loss_and_grads([x])
@@ -177,7 +180,7 @@ def eval_loss_and_grads(x):
 <br/>
 
 
-
+이렇게 나오는 gradients값을 인풋 Seed Image에 더하면, back-propagation이라는 과정의 원리상, 해당층의 뉴론반응수치를 더욱 높게 만들게 됩니다. 아래의 x += step * grad_values 수식이 gradient값을 인풋인 x에 누적하여 더함을 의미합니다. 이 과정을 gradient ascent라고 부릅니다. 여기에서 step은 gradients값을 조정하는 수치로 아래에서 임의로 지정하게 됩니다.
 ```
 def gradient_ascent(x, iterations, step, max_loss=None):
     for i in range(iterations):
@@ -191,6 +194,8 @@ def gradient_ascent(x, iterations, step, max_loss=None):
 <br/>
 
 
+이러한 gradient ascent 방법에서 원본 이미지를 스케일링하여 다양한 사이즈에서 deep dream하면 더 좋은 결과를 얻을 수 있습니다. 
+이에 아래와 같은 resize_img함수를 정의합니다.
 ```
 def resize_img(img, size):
     img = np.copy(img)
@@ -208,6 +213,12 @@ def resize_img(img, size):
 <br/>
 
 
+이제 gradient ascent 과정에 쓰이는 파라미터들을 정의합니다.
+- step은 Seed Image에 gradients를 더할때 쓰이는 수치입니다.
+- num_octave는 위와 같은 multi-scale방법을 사용할 때 몇번의 scaling을 할지 정하는 수치입니다.
+- octave_scale은 scale간의 크기 비율을 나타냅니다.
+- iterations는 매 scale마다 몇 번의 gradients를 연산할지를 정합니다.
+- max_loss는 iteration을 꽉 채우지 않더라도 해당 수치만큼 loss가 달성되면 deep dream이 충분히 이루어졌다고 보고 연산을 중지하도록 하는 수치입니다.
 ```
 # Playing with these hyperparameters will also allow you to achieve new effects
 step = 0.01  # Gradient ascent step size
@@ -219,7 +230,7 @@ max_loss = 10.
 <br/>
 
 
-
+아래의 과정은 다양한 크기를 가지는 Seed Image의 크기에 맞춰서 위에서 정의한 num_octave와 octave_scale에 따라 어떤 중간 scale값을 가져야하는지 구하는 코드입니다. 기본적으로 Seed Image의 크기를 기준으로 num_octave의 개수만큼 octave_scale값을 나누면서 다른 scale의 값을 정의합니다.
 ```
 successive_shapes = [original_shape]
 for i in range(1, num_octave):
@@ -232,10 +243,10 @@ shrunk_original_img = resize_img(img, successive_shapes[0])
 <br/>
 
 
-
-
-
-
+마지막으로, 위에서 정의한 모든 변수와 함수들을 가지고 아래의 과정을 수행하면 최종 deep dream된 이미지가 저장됩니다.<br/>
+successive_shapes의 개수만큼 연산을 수행하고, 매 수행시에는 resize_img를 통하여 이미지를 해당 스케일의 크기를 갖도록 조정한 후, 
+gradient_ascent를 통하여 deep dream을 수행합니다. 여기에서 이미지 resize에서 나오는 손실을 보정해주기위한 코드가 존재합니다.
+그리고 마지막으로 결과를 저장합니다.
 ```
 for shape in successive_shapes:
     print('Processing image shape', shape)
