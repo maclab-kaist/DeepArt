@@ -32,7 +32,9 @@
 
 <h2><a name="d2" style="color:black; text-decoration:none;">Deep Dream 나만의 그림 만들기</a></h2>
 
-
+Deep dream을 이용하여 나만의 추상적인 그림을 만들어 보고자 합니다.<br/>
+"DEEP DREAM GENERATOR"라는 기성 사이트를 이용하여 우리는 가지고 있는 이미지에 원하는 추상성을 덧입힐 수 있습니다.
+<a href="https://deepdreamgenerator.com/generator" style="text-decoration:none;transition: color ease 0.3s;">DEEP DREAM GENERATOR</a>
 
 
 
