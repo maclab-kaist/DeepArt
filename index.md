@@ -58,6 +58,8 @@
 
 ## 4. Neural Network를 이용한 자동작곡
 
+[2017/11/10 Workshop용 다운로드](melody_rnn/DL4A_workshop.zip)
+
 1. [소개 및 데이터 받아오기](melody_rnn/MelodyRNN_01_introduction.md)[(ipynb파일)](melody_rnn/MelodyRNN_01_introduction.ipynb)
 
 2. [텐서플로우 간단 Review](melody_rnn/MelodyRNN_02_Tensorflow_Quick_Review.md)[(ipynb파일)](melody_rnn/MelodyRNN_02_Tensorflow_Quick_Review.ipynb)
