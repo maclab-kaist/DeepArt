@@ -219,6 +219,7 @@ def resize_img(img, size):
 - octave_scale은 scale간의 크기 비율을 나타냅니다.
 - iterations는 매 scale마다 몇 번의 gradients를 연산할지를 정합니다.
 - max_loss는 iteration을 꽉 채우지 않더라도 해당 수치만큼 loss가 달성되면 deep dream이 충분히 이루어졌다고 보고 연산을 중지하도록 하는 수치입니다.
+<br/>
 ```
 # Playing with these hyperparameters will also allow you to achieve new effects
 step = 0.01  # Gradient ascent step size
@@ -245,7 +246,7 @@ shrunk_original_img = resize_img(img, successive_shapes[0])
 
 마지막으로, 위에서 정의한 모든 변수와 함수들을 가지고 아래의 과정을 수행하면 최종 deep dream된 이미지가 저장됩니다.<br/>
 successive_shapes의 개수만큼 연산을 수행하고, 매 수행시에는 resize_img를 통하여 이미지를 해당 스케일의 크기를 갖도록 조정한 후, 
-gradient_ascent를 통하여 deep dream을 수행합니다. 여기에서 이미지 resize에서 나오는 손실을 보정해주기위한 코드가 존재합니다.
+gradient_ascent를 통하여 deep dream을 수행합니다. 여기에서 이미지 resize에서 나오는 손실을 보정해주기 위한 코드가 존재합니다.
 그리고 마지막으로 결과를 저장합니다.
 ```
 for shape in successive_shapes:
@@ -265,7 +266,12 @@ for shape in successive_shapes:
 save_img(img, fname=result_prefix + '.png')
 ```
 <br/>
+<br/>
 
-
+위와 같이 Deep Dream에 대한 소개, 직접 그림 만들어보기, 코딩 해보기 까지 둘러보았습니다.<br/>
+위의 내용에 대하여 추가적으로 궁금하신 점이 있다면 아래의 메일주소로 연락주시면 답변드리도록 하겠습니다. 읽어주셔서 감사합니다~! <br/>
+<p align="right"> 
+jongpillee.brian@gmail.com
+</p><br/>
 
 
