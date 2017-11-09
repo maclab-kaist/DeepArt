@@ -8,7 +8,7 @@
 <img src="./filters.png">
 </p>
 
-<p align="center" style="color:blue; font-size: 4em;">사진출처: https://distill.pub/2017/feature-visualization/</p><br/><br/>
+<p align="center" style="color:#337ab7; font-size: 1.0em;">사진출처: https://distill.pub/2017/feature-visualization/</p><br/><br/>
 
 위의 사진은 이미지 분류를 위하여 학습된 필터를 계층에 따라서 시각화 한 것으로 Edges부터 Objects까지 추상성의 변화과정을 보여줍니다. 예를 들어, 인공신경망의 하위 층(윗 두줄)에서는 외곽선 또는 질감 같은 낮은 수준의 패턴을 학습하고, 상위 층(아래 두 줄)에서는 꽃, 건물 그리고 눈과 같은 상위 수준의 물체를 학습합니다.<br/>
 
@@ -17,7 +17,7 @@
 <p align="center"> 
 <img src="https://cdn-images-1.medium.com/max/800/1*PKIwmv_VuRKnaECuKkIvtQ.gif">
 </p>
-<p align="center" style="color:blue; font-size: 4em;">GIF출처: https://cdn-images-1.medium.com/max/800/1*PKIwmv_VuRKnaECuKkIvtQ.gif</p><br/><br/>
+<p align="center" style="color:#337ab7; font-size: 1.0em;">GIF출처: https://cdn-images-1.medium.com/max/800/1*PKIwmv_VuRKnaECuKkIvtQ.gif</p><br/><br/>
 
 위와 같은 그림을 Deep Dream이라 부르며, 인공 신경망의 학습에 사용된 데이터가 강아지, 고양이와 같은 동물을 많이 포함하였기에, 어류, 개, 눈알의 모양으로 왜곡되거나, 우주에서 온 듯한 기이한 색채를 뿌리는 형태로 이미지가 변환되는 성향이 강합니다. 하여 코스믹 호러 이미지라거나 LSD에 의한 환각체험 같다는 평도 많이 있습니다. (from <a href="http://nuriwiki.net/wiki/index.php/Google_Deep_Dream" target="_blank">누리위키</a>)
 
