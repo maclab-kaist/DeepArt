@@ -70,6 +70,7 @@
 
 6. [학습된 모델을 사용한 멜로디 예측](melody_rnn/MelodyRNN_06_Model_Prediction.md)[(ipynb파일)](melody_rnn/MelodyRNN_06_Model_Prediction.ipynb)
 
+**워크샵 참여인원은 다음 파일을 다운로드 받으세요.(나중에 DS4A_workshop/checkpoint 폴더에 모델 파일을 넣으세요)**
 - [Tutorial workshop용 코드 다운로드](melody_rnn/DL4A_workshop.zip)
 - [Tutorial workshop용 trained model 다운로드](melody_rnn/model.zip)
 
