@@ -5,12 +5,29 @@
 
 ![ex_screenshot](./filters.png)
 
-<div class="pull-right">(사진출처: https://distill.pub/2017/feature-visualization/)</div>
+사진출처: https://distill.pub/2017/feature-visualization/</br></br>
+
+
+
+
+
+# Deep Dream 따라해보기 
+
+
 
 https://deepdreamgenerator.com/generator (Deep Style, Thin Style, Deep Dream)
+사용방법
 
+
+예시
 http://www.miketyka.com/?s=deepdream
 http://barabeke.it/portfolio/deep-dream-generator
+
+
+# Deep Dream 코딩 해보기 
+
+
+
 
 이 튜토리얼에서는 인공신경망을 이용해 다양한 음원의 종류를 파악하는 분류기를 만들어 보고, 이를 이용해 각 음원의 특징을 2차원 상에 나타내는 시각화를 해 보겠습니다.
 
