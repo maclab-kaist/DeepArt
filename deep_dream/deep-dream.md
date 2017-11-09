@@ -1,15 +1,12 @@
-.center-image{
-    margin: 0 auto;
-    display: block;
-}
-
 <h2><a name="d1" style="color:black; text-decoration:none;">Deep Dream 소개</a></h2>
 
 
 인공 신경망에서 학습된 뉴런의 대다수는 추상성의 계층에 따라서 어떠한 추상 또는 패턴을 탐지합니다.<br/>
 이러한 추상 또는 패턴의 예를 보자면 다음과 같습니다.
 
-![ex_screenshot](./filters.png)
+<p align="center"> 
+<img src="./filters.png">
+</p>
 
 사진출처: https://distill.pub/2017/feature-visualization/<br/><br/>
 
@@ -21,6 +18,8 @@
 <img src="https://cdn-images-1.medium.com/max/800/1*PKIwmv_VuRKnaECuKkIvtQ.gif">
 </p>
 GIF출처: https://cdn-images-1.medium.com/max/800/1*PKIwmv_VuRKnaECuKkIvtQ.gif <br/><br/>
+
+이러한 혼란스러운 이미지는 다음의 방법으로 생성됩니다. <br/>
 
 
 
