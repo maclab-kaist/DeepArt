@@ -28,7 +28,6 @@ http://barabeke.it/portfolio/deep-dream-generator
 
 
 
-
 이 튜토리얼에서는 인공신경망을 이용해 다양한 음원의 종류를 파악하는 분류기를 만들어 보고, 이를 이용해 각 음원의 특징을 2차원 상에 나타내는 시각화를 해 보겠습니다.
 
 이 튜토리얼은 다음과 같은 구조로 이루어져 있습니다.
@@ -97,6 +96,9 @@ string
 synth_lead
 vocal
 ```
+
+<h2><a name="exactline">Linking Directly to a Specific Location</a></h2>
+
 
 레이블은 일반적으로 어떤 학습 모델이 찾아야 할 답(이 경우에는 악기의 종류)을 말합니다.
 
