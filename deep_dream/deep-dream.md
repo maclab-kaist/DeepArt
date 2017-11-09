@@ -12,8 +12,10 @@
 
 우리는 이러한 필터를 이용하여 다음과 같은 매우 혼란스러운 작품을 만들어 볼 수 있습니다.
 
-![Alt Text](http://1.media.collegehumor.cvcdn.com/66/88/3ef750ddc13282daab600f8012ef436f.gif)
-
+<p align="center">
+![Alt Text](https://cdn-images-1.medium.com/max/800/1*PKIwmv_VuRKnaECuKkIvtQ.gif)
+GIF출처: https://cdn-images-1.medium.com/max/800/1*PKIwmv_VuRKnaECuKkIvtQ.gif <br/><br/>
+</p>
 
 
 
