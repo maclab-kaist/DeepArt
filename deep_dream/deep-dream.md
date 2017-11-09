@@ -1,19 +1,17 @@
-# 
 <h2><a name="d1" style="color:black; text-decoration:none;">Deep Dream 소개</a></h2>
 
 
-인공 신경망에서 학습된 뉴런의 대다수는 어떠한 추상 또는 패턴을 탐지합니다.</br>
+인공 신경망에서 학습된 뉴런의 대다수는 어떠한 추상 또는 패턴을 탐지합니다.<br/>
 이러한 추상 또는 패턴의 예를 보자면 다음과 같습니다.
 
 ![ex_screenshot](./filters.png)
 
-사진출처: https://distill.pub/2017/feature-visualization/</br></br>
+사진출처: https://distill.pub/2017/feature-visualization/<br/><br/>
 
 
 
 
 <h2><a name="d2" style="color:black; text-decoration:none;">Deep Dream 나만의 그림 만들기</a></h2>
-# Deep Dream 따라해보기 
 
 
 
@@ -26,7 +24,6 @@ http://www.miketyka.com/?s=deepdream
 http://barabeke.it/portfolio/deep-dream-generator
 
 
-# Deep Dream 코딩 해보기 
 <h2><a name="d3" style="color:black; text-decoration:none;">Deep Dream 코딩 해보기</a></h2>
 
 
