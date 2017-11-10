@@ -12027,17 +12027,7 @@ div#notebook {
             
             <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
 
-            <span class="c1"># if np.mod(counter, 10) == 1:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">save_model</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">checkpoint_dir</span><span class="p">,</span> <span class="n">counter</span><span class="p">)</span>
-
-                <span class="c1"># # Get sample </span>
-                <span class="c1"># if np.mod(counter, 200) == 1:</span>
-                <span class="c1">#   self.get_sample(epoch, idx, &#39;train&#39;)</span>
-                <span class="c1">#   self.get_sample( epoch, idx, &#39;val&#39;)</span>
-
-                <span class="c1"># # Saving current model</span>
-                <span class="c1"># if np.mod(counter, 500) == 2:</span>
-                <span class="c1">#   self.save(args.checkpoint_dir, counter)</span>
             <span class="n">np</span><span class="o">.</span><span class="n">savetxt</span><span class="p">(</span><span class="s1">&#39;avg_loss_txt/averaged_loss_per_epoch_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">epoch</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;.txt&#39;</span><span class="p">,</span> <span class="n">loss_per_epoch</span><span class="p">)</span> 
 
 
@@ -12065,12 +12055,8 @@ div#notebook {
         <span class="n">hidden_state</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">multi_cells</span><span class="o">.</span><span class="n">zero_state</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">))</span>
         
         <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">user_input_sequence</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
-<span class="c1">#             print(i)</span>
-<span class="c1">#             print(user_input_sequence[i])</span>
             <span class="n">new_logits</span><span class="p">,</span> <span class="n">prediction</span><span class="p">,</span> <span class="n">hidden_state</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">([</span><span class="bp">self</span><span class="o">.</span><span class="n">logits</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">pred</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">out_state</span><span class="p">],</span> 
                                                 <span class="n">feed_dict</span><span class="o">=</span><span class="p">{</span><span class="bp">self</span><span class="o">.</span><span class="n">X</span><span class="p">:</span> <span class="n">user_input_sequence</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="bp">self</span><span class="o">.</span><span class="n">rnn_initial_state</span><span class="p">:</span> <span class="n">hidden_state</span><span class="p">})</span>
-<span class="c1">#             print(new_logits)</span>
-<span class="c1">#             print(prediction)</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">new_logits</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 
         <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;secondly, generating&#39;</span><span class="p">)</span>
@@ -12096,7 +12082,6 @@ div#notebook {
                 <span class="k">else</span><span class="p">:</span>
                     <span class="n">generated_melody</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">curr_curve</span><span class="p">)</span>
                     <span class="n">generated_input_seq</span> <span class="o">=</span> <span class="n">generated_pred</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="c1">#         print(np.array(generated_melody).shape)</span>
         
         <span class="k">return</span> <span class="n">generated_melody</span>
 </pre></div>

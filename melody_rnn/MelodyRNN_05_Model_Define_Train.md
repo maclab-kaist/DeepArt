@@ -221,17 +221,7 @@ class model_RNN(object):
             
             counter += 1
 
-            # if np.mod(counter, 10) == 1:
             self.save_model(self.checkpoint_dir, counter)
-
-                # # Get sample 
-                # if np.mod(counter, 200) == 1:
-                #   self.get_sample(epoch, idx, 'train')
-                #   self.get_sample( epoch, idx, 'val')
-
-                # # Saving current model
-                # if np.mod(counter, 500) == 2:
-                #   self.save(args.checkpoint_dir, counter)
             np.savetxt('avg_loss_txt/averaged_loss_per_epoch_' + str(epoch) + '.txt', loss_per_epoch) 
 
 
@@ -259,12 +249,8 @@ class model_RNN(object):
         hidden_state = self.sess.run(self.multi_cells.zero_state(self.batch_size, tf.float32))
         
         for i in range(user_input_sequence.shape[0]):
-#             print(i)
-#             print(user_input_sequence[i])
             new_logits, prediction, hidden_state = self.sess.run([self.logits, self.pred, self.out_state], 
                                                 feed_dict={self.X: user_input_sequence[i], self.rnn_initial_state: hidden_state})
-#             print(new_logits)
-#             print(prediction)
         print(new_logits.shape)
 
         print('secondly, generating')
@@ -290,7 +276,6 @@ class model_RNN(object):
                 else:
                     generated_melody.append(curr_curve)
                     generated_input_seq = generated_pred[-1]
-#         print(np.array(generated_melody).shape)
         
         return generated_melody
 ```
