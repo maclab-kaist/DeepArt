@@ -17,8 +17,7 @@
 
 5. [jupyter notebook audio 튜토리얼 (musicinformationretrieval.com)](http://musicinformationretrieval.com/ipython_audio.html)
 
-## 
-<h2>1. Deep-Dream<font size="6">이종필</span></h2>
+<h2>1. Deep-Dream</h2>
 
 1. <a href="deep_dream/deep-dream.html#d1">Deep Dream 소개</a>
 
