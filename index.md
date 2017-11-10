@@ -63,8 +63,24 @@ jongpillee.brian@gmail.com<br/>
 
 ## 4. Neural Network를 이용한 자동작곡
 
-1. [Melody RNN using midi data](melody_rnn/melody_RNN.md)
+1. [소개 및 데이터 받아오기](melody_rnn/MelodyRNN_01_introduction.md)[(ipynb파일)](melody_rnn/MelodyRNN_01_introduction.ipynb)
 
-2. 더미
+2. [텐서플로우 간단 Review](melody_rnn/MelodyRNN_02_Tensorflow_Quick_Review.md)[(ipynb파일)](melody_rnn/MelodyRNN_02_Tensorflow_Quick_Review.ipynb)
 
-3. 메뉴
+3. [텐서플로우 Basic RNN 모델](melody_rnn/MelodyRNN_03_Tensorflow_Basic_RNN_model.md)[(ipynb파일)](melody_rnn/MelodyRNN_03_Tensorflow_Basic_RNN_model.ipynb)
+
+4. [데이터 구조 결정 및 전처리](melody_rnn/MelodyRNN_04_Data_Preprocessing.md)[(ipynb파일)](melody_rnn/MelodyRNN_04_Data_Preprocessing.ipynb)
+
+5. [모델 정의 및 학습](melody_rnn/MelodyRNN_05_Model_Define_Train.md)[(ipynb파일)](melody_rnn/MelodyRNN_05_Model_Define_Train.ipynb)
+
+6. [학습된 모델을 사용한 멜로디 예측](melody_rnn/MelodyRNN_06_Model_Prediction.md)[(ipynb파일)](melody_rnn/MelodyRNN_06_Model_Prediction.ipynb)
+
+**워크샵 참여인원은 다음 파일을 다운로드 받으세요.**  
+**(나중에 DL4A_workshop/checkpoint 폴더에 모델 파일을 넣으세요)**
+
+- [Tutorial workshop용 코드 다운로드](melody_rnn/DL4A_workshop.zip)
+- [Tutorial workshop용 trained model 다운로드](melody_rnn/model.zip)
+
+
+
+
