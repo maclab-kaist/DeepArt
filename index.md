@@ -3,7 +3,7 @@
 
 이 페이지는 [KAIST MAC랩](http://mac.kaist.ac.kr) 에서 만들었습니다.
 
-## 0. 시작하기
+<h2>0. 시작하기</h2>
 
 1. 프로젝트에 관하여
 
@@ -17,7 +17,7 @@
 
 5. [jupyter notebook audio 튜토리얼 (musicinformationretrieval.com)](http://musicinformationretrieval.com/ipython_audio.html)
 
-<h2>1. Deep-Dream <span style="font-size:0.8em">(이종필, <a href="https://jongpillee.github.io/" style="color:#337ab7;text-decoration:none;transition: color ease 0.7s;" target="_blank">블로그</a>)</span></h2>
+<h2>1. Deep-Dream <span style="font-size:0.6em">(by 이종필, <a href="https://jongpillee.github.io/" style="color:#337ab7;text-decoration:none;transition: color ease 0.7s;" target="_blank">개인블로그</a>)</span></h2>
 
 1. <a href="deep_dream/deep-dream.html#d1">Deep Dream 소개</a>
 
@@ -26,7 +26,7 @@
 3. <a href="deep_dream/deep-dream.html#d3">Deep Dream 코딩 해보기</a>
 
 
-## 2. Style-Transfer
+<h2>2. Style-Transfer <span style="font-size:0.6em">(by 권태균)</span></h2>
 
 1. Style-Transfer 소개
 
@@ -46,7 +46,7 @@
 
 9. 더 알아보기 - 3. Audio Style Transfer
 
-## 3. Sound Classification and t-SNE
+<h2>3. Sound Classification and t-SNE <span style="font-size:0.6em">(by 김근형)</span></h2>
 
 1. [데이터 준비하고 전처리하기](classify_tsne/classify_tsne_1_prepare_data.md)
 
@@ -56,7 +56,7 @@
 
 4. [t-SNE로 분석하기](classify_tsne/classify_tsne_4_tsne.md)
 
-## 4. Neural Network를 이용한 자동작곡
+<h2>4. Neural Network를 이용한 자동작곡 <span style="font-size:0.6em">(by 최정)</span></h2>
 
 1. [소개 및 데이터 받아오기](melody_rnn/MelodyRNN_01_introduction.md)[(ipynb파일)](melody_rnn/MelodyRNN_01_introduction.ipynb)
 
