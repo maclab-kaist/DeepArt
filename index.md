@@ -20,7 +20,7 @@
 ## 1. Deep-Dream
 
 <p align="right"> 
-이종필, <a href="https://deepdreamgenerator.com/generator" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">개인블로그</a><br/>
+이종필, <a href="https://jongpillee.github.io/" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">개인블로그</a><br/>
 jongpillee.brian@gmail.com<br/>
 </p>
 
