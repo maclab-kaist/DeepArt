@@ -17,7 +17,7 @@
 
 5. [jupyter notebook audio 튜토리얼 (musicinformationretrieval.com)](http://musicinformationretrieval.com/ipython_audio.html)
 
-<h2>1. Deep-Dream <span style="font-size:0.6em">(by <a href="https://jongpillee.github.io/" style="color:#337ab7;text-decoration:none;transition: color ease 0.7s;" target="_blank">이종필</a>)</span></h2>
+<h2>1. Deep-Dream <span style="font-size:0.6em">(by 이종필, <a href="https://jongpillee.github.io/" style="color:#337ab7;text-decoration:none;transition: color ease 0.7s;" target="_blank">개인블로그</a>)</span></h2>
 
 1. <a href="deep_dream/deep-dream.html#d1">Deep Dream 소개</a>
 
