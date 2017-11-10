@@ -19,17 +19,16 @@
 
 ## 1. Deep-Dream
 
-<p align="right"> 
-이종필, <a href="https://jongpillee.github.io/" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">개인블로그</a><br/>
-jongpillee.brian@gmail.com<br/>
-</p>
-
 1. <a href="deep_dream/deep-dream.html#d1">Deep Dream 소개</a>
 
 2. <a href="deep_dream/deep-dream.html#d2">Deep Dream 나만의 그림 만들기</a>
 
 3. <a href="deep_dream/deep-dream.html#d3">Deep Dream 코딩 해보기</a>
 
+<p align="right"> 
+<a href="https://jongpillee.github.io/" style="color:black;text-decoration:none;transition: color ease 0.7s;" target="_blank">이종필</a><br/>
+jongpillee.brian@gmail.com<br/>
+</p>
 
 ## 2. Style-Transfer
 
