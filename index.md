@@ -26,7 +26,7 @@
 3. <a href="deep_dream/deep-dream.html#d3">Deep Dream 코딩 해보기</a>
 
 <p align="right"> 
-이종필, <a href="https://jongpillee.github.io/" style="color:#337ab7;text-decoration:none;transition: color ease 0.7s;" target="_blank">블로그</a>, jongpillee.brian@gmail.com<br/>
+by 이종필, <a href="https://jongpillee.github.io/" style="color:#337ab7;text-decoration:none;transition: color ease 0.7s;" target="_blank">블로그</a><br/>
 </p>
 
 ## 2. Style-Transfer
