@@ -19,6 +19,11 @@
 
 ## 1. Deep-Dream
 
+<p align="right"> 
+이종필, <a href="https://deepdreamgenerator.com/generator" style="text-decoration:none;transition: color ease 0.7s;" target="_blank">개인블로그</a><br/>
+jongpillee.brian@gmail.com<br/>
+</p>
+
 1. <a href="deep_dream/deep-dream.html#d1">Deep Dream 소개</a>
 
 2. <a href="deep_dream/deep-dream.html#d2">Deep Dream 나만의 그림 만들기</a>
