@@ -28,23 +28,15 @@
 
 <h2>2. Style-Transfer <span style="font-size:0.6em">(by 권태균)</span></h2>
 
-1. Style-Transfer 소개
+1. <a href="deep_dream/deep-dream.html#d1">Style transfer 소개</a>
 
-2. Style-Transfer로 나만의 그림 만들기
+2. <a href="deep_dream/deep-dream.html#d2">이미지 읽어들이기</a>
 
-3. Style-Transfer의 옵션 바꿔보기-1. style의 수준 바꾸기
+3. <a href="deep_dream/deep-dream.html#d3">모델 읽어오기</a>
 
-4. Style-Transfer의 옵션 바꿔보기-2. style의 색상, 부분 적용
+4. <a href="deep_dream/deep-dream.html#d4">Style loss, Content loss 정의하기</a>
 
-5. Fast-Style Transfer : 고정된 스타일로의 빠른 transfer
-
-6. Fast-Style Transfer로 나만의 비디오 만들기
-
-7. 더 알아보기 - 1. Style Transfer를 이용한 다른 예시들
-
-8. 더 알아보기 - 2. GAN을 이용한 Style Transfer
-
-9. 더 알아보기 - 3. Audio Style Transfer
+5. <a href="deep_dream/deep-dream.html#d4">Optimization 하기</a>
 
 <h2>3. Sound Classification and t-SNE <span style="font-size:0.6em">(by 김근형)</span></h2>
 
